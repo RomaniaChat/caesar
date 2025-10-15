@@ -1,0 +1,80 @@
+@import '../common/base.css';
+
+:root {
+    --brand-primary: #7B1FA2;
+    --brand-primary-hover: #9C27B0;
+    --brand-midtone: #F3E5F5;
+    --brand-darktone: #4A148C;
+    --brand-default-bg: #fff;
+    --brand-default-fg: #3E1F47;
+    --brand-notice: #E1BEE7;
+    --brand-warning: #CE93D8;
+    --brand-error: #D81B60;
+    --comp-workspace-before-bg: var(--brand-primary);
+    --comp-bg-kiwi-workspace--disconnected-after-bg: var(--brand-error);
+    --comp-header-bg: #F3E5F5;
+    --comp-header-name-fg: var(--brand-default-fg);
+    --comp-header-option-active-fg: var(--brand-default-bg);
+    --comp-header-option-active-bg: var(--brand-primary);
+    --comp-statebrowser-fg: #fff;
+    --comp-statebrowser-bg: #4A148C;
+    --comp-statebrowser-bg-networkname: #7B1FA2;
+    --comp-statebrowser-channel-active-bg: #ffffff1a;
+    --comp-statebrowser-channel-active-fg: #fff;
+    --comp-usermenu-open-bg: #3E1F47;
+    --comp-statebrowser-network-border: #9C27B0;
+    --comp-sidebar-bg: #fff;
+    --comp-sidebar-fg: #3E1F47;
+    --comp-scroller-bg: #F3E5F5;
+    --comp-scroller-fg: #9C27B0;
+    --comp-aboutbuffer-bg: rgba(0, 0, 0, 0.03);
+    --comp-aboutbuffer-header-bg: #7B1FA2;
+    --brand-link-normal: #7B1FA2;
+    --brand-link--hover: #9C27B0;
+    --brand-shadow: rgba(0, 0, 0, 0.1);
+    --comp-border: #4A148C;
+}
+
+.kiwi-startup-common-section-info { border-left: 5px solid #9C27B0; }
+.kiwi-statebrowser-usermenu--open { background-color: #4A148C; }
+.kiwi-network-name-options { background-color: #7B1FA2; }
+.kiwi-statebrowser-channel { background-color: #6A1B9A; }
+.kiwi-statebrowser-channel:hover { background-color: #7B1FA2; }
+.kiwi-statebrowser-channel-active { background: #9C27B0; }
+.kiwi-aboutbuffer h4, .kiwi-sidebar-options { background-color: #7B1FA2; }
+.kiwi-appsettings-block h3, .kiwi-appsettings-title, .u-form input[type='checkbox']:checked, .u-form input[type='radio']:checked { background-color: #7B1FA2; }
+.u-link, .kiwi-messagelist .kiwi-messagelist-body a, .kiwi-channellist-table-topic a, .kiwi-aboutbuffer a { color: #7B1FA2; }
+.kiwi-header-server-connection .u-button { background-color: #6A1B9A; }
+.kiwi-messagelist-message--own { background-color: #7b1fa221; border-left-color: #7B1FA2; }
+.kiwi-messagelist-seperator { border-top-color: #4A148C; color: #4A148C; }
+.kiwi-messagelist-message-notice { background-color: #E1BEE7; }
+.kiwi-sidebar.kiwi-theme-bg, .kiwi-sidebar-section-nicklist { background-color: #E1BEE7; } /* Chispa morada suave */
+/* backgrund */
+.kiwi-workspace-background {
+    background-image: url('background.jpg');
+    opacity: 0.5;
+    background-size: 40% auto; /* 40% auto; */
+}
+.kiwi-wrap,
+.kiwi-workspace {
+    background: initial;
+}
+
+/* Nicklist */
+.kiwi-nicklist-user--away {
+    color: #999;
+}
+.kiwi-nicklist .kiwi-nicklist-user-nick {
+    font-weight: normal;
+}
+.kiwi-nicklist-user--mode-o .kiwi-nicklist-user-nick, .kiwi-nicklist-user--mode-h .kiwi-nicklist-user-nick, .kiwi-nicklist-user--mode-v .kiwi-nicklist-user-nick {
+    font-weight: bold;
+}
+.hover .kiwi-nicklist-user {
+    background: #eee;
+}
+
+/* Userbox */
+.kiwi-userbox-opaction-kick, .kiwi-userbox-opaction-kick:hover, .kiwi-userbox-opaction-ban, .kiwi-userbox-opaction-ban:hover {
+    background-color: #bf5155;
+}

@@ -1,0 +1,61 @@
+@import '../common/base.css';
+
+:root {
+    --brand-primary: #C2185B;
+    --brand-primary-hover: #E91E63;
+    --brand-midtone: #FCE4EC;
+    --brand-darktone: #880E4F;
+    --brand-default-bg: #fff;
+    --brand-default-fg: #3E1F2E;
+    --brand-notice: #F8BBD0;
+    --brand-warning: #F48FB1;
+    --brand-error: #D81B60;
+    --comp-workspace-before-bg: var(--brand-primary);
+    --comp-bg-kiwi-workspace--disconnected-after-bg: var(--brand-error);
+    --comp-header-bg: #FCE4EC;
+    --comp-header-name-fg: var(--brand-default-fg);
+    --comp-header-option-active-fg: var(--brand-default-bg);
+    --comp-header-option-active-bg: var(--brand-primary);
+    --comp-statebrowser-fg: #fff;
+    --comp-statebrowser-bg: #880E4F;
+    --comp-statebrowser-bg-networkname: #C2185B;
+    --comp-statebrowser-channel-active-bg: #ffffff1a;
+    --comp-statebrowser-channel-active-fg: #fff;
+    --comp-usermenu-open-bg: #3E1F2E;
+    --comp-statebrowser-network-border: #E91E63;
+    --comp-sidebar-bg: #fff;
+    --comp-sidebar-fg: #3E1F2E;
+    --comp-scroller-bg: #FCE4EC;
+    --comp-scroller-fg: #E91E63;
+    --comp-aboutbuffer-bg: rgba(0, 0, 0, 0.03);
+    --comp-aboutbuffer-header-bg: #C2185B;
+    --brand-link-normal: #C2185B;
+    --brand-link--hover: #E91E63;
+    --brand-shadow: rgba(0, 0, 0, 0.1);
+    --comp-border: #880E4F;
+}
+
+.kiwi-startup-common-section-info { border-left: 5px solid #E91E63; }
+.kiwi-statebrowser-usermenu--open { background-color: #880E4F; }
+.kiwi-network-name-options { background-color: #C2185B; }
+.kiwi-statebrowser-channel { background-color: #AD1457; }
+.kiwi-statebrowser-channel:hover { background-color: #C2185B; }
+.kiwi-statebrowser-channel-active { background: #E91E63; }
+.kiwi-aboutbuffer h4, .kiwi-sidebar-options { background-color: #C2185B; }
+.kiwi-appsettings-block h3, .kiwi-appsettings-title, .u-form input[type='checkbox']:checked, .u-form input[type='radio']:checked { background-color: #C2185B; }
+.u-link, .kiwi-messagelist .kiwi-messagelist-body a, .kiwi-channellist-table-topic a, .kiwi-aboutbuffer a { color: #C2185B; }
+.kiwi-header-server-connection .u-button { background-color: #AD1457; }
+.kiwi-messagelist-message--own { background-color: #c2185b21; border-left-color: #C2185B; }
+.kiwi-messagelist-seperator { border-top-color: #880E4F; color: #880E4F; }
+.kiwi-messagelist-message-notice { background-color: #F8BBD0; }
+.kiwi-sidebar.kiwi-theme-bg, .kiwi-sidebar-section-nicklist { background-color: #F8BBD0; } /* Chispa rosa suave */
+/* backgrund */
+.kiwi-workspace-background {
+    background-image: url('background.jpg');
+    opacity: 0.5;
+    background-size: 40% auto; /* 40% auto; */
+}
+.kiwi-wrap,
+.kiwi-workspace {
+    background: initial;
+}

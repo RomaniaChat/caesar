@@ -1,0 +1,61 @@
+@import '../common/base.css';
+
+:root {
+    --brand-primary: #6D4C41;
+    --brand-primary-hover: #8D6E63;
+    --brand-midtone: #EFEBE9;
+    --brand-darktone: #3E2723;
+    --brand-default-bg: #fff;
+    --brand-default-fg: #3E2723;
+    --brand-notice: #D7CCC8;
+    --brand-warning: #BCAAA4;
+    --brand-error: #D81B60;
+    --comp-workspace-before-bg: var(--brand-primary);
+    --comp-bg-kiwi-workspace--disconnected-after-bg: var(--brand-error);
+    --comp-header-bg: #EFEBE9;
+    --comp-header-name-fg: var(--brand-default-fg);
+    --comp-header-option-active-fg: var(--brand-default-bg);
+    --comp-header-option-active-bg: var(--brand-primary);
+    --comp-statebrowser-fg: #fff;
+    --comp-statebrowser-bg: #3E2723;
+    --comp-statebrowser-bg-networkname: #6D4C41;
+    --comp-statebrowser-channel-active-bg: #ffffff1a;
+    --comp-statebrowser-channel-active-fg: #fff;
+    --comp-usermenu-open-bg: #3E2723;
+    --comp-statebrowser-network-border: #8D6E63;
+    --comp-sidebar-bg: #fff;
+    --comp-sidebar-fg: #3E2723;
+    --comp-scroller-bg: #EFEBE9;
+    --comp-scroller-fg: #8D6E63;
+    --comp-aboutbuffer-bg: rgba(0, 0, 0, 0.03);
+    --comp-aboutbuffer-header-bg: #6D4C41;
+    --brand-link-normal: #6D4C41;
+    --brand-link--hover: #8D6E63;
+    --brand-shadow: rgba(0, 0, 0, 0.1);
+    --comp-border: #3E2723;
+}
+
+.kiwi-startup-common-section-info { border-left: 5px solid #8D6E63; }
+.kiwi-statebrowser-usermenu--open { background-color: #3E2723; }
+.kiwi-network-name-options { background-color: #6D4C41; }
+.kiwi-statebrowser-channel { background-color: #5D4037; }
+.kiwi-statebrowser-channel:hover { background-color: #6D4C41; }
+.kiwi-statebrowser-channel-active { background: #8D6E63; }
+.kiwi-aboutbuffer h4, .kiwi-sidebar-options { background-color: #6D4C41; }
+.kiwi-appsettings-block h3, .kiwi-appsettings-title, .u-form input[type='checkbox']:checked, .u-form input[type='radio']:checked { background-color: #6D4C41; }
+.u-link, .kiwi-messagelist .kiwi-messagelist-body a, .kiwi-channellist-table-topic a, .kiwi-aboutbuffer a { color: #6D4C41; }
+.kiwi-header-server-connection .u-button { background-color: #5D4037; }
+.kiwi-messagelist-message--own { background-color: #6d4c4121; border-left-color: #6D4C41; }
+.kiwi-messagelist-seperator { border-top-color: #3E2723; color: #3E2723; }
+.kiwi-messagelist-message-notice { background-color: #D7CCC8; }
+.kiwi-sidebar.kiwi-theme-bg, .kiwi-sidebar-section-nicklist { background-color: #D7CCC8; } /* Marrón suave */
+/* backgrund */
+.kiwi-workspace-background {
+    background-image: url('background.jpg');
+    opacity: 0.5;
+    background-size: 40% auto; /* 40% auto; */
+}
+.kiwi-wrap,
+.kiwi-workspace {
+    background: initial;
+}

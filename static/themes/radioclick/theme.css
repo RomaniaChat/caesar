@@ -1,0 +1,52 @@
+@import '../common/base.css';
+
+:root {
+    --brand-primary: #4A148C;
+    --brand-primary-hover: #6A1B9A;
+    --brand-midtone: #EDE7F6;
+    --brand-darktone: #311B92;
+    --brand-default-bg: #fff;
+    --brand-default-fg: #1A237E;
+    --brand-notice: #D1C4E9;
+    --brand-warning: #AB47BC;
+    --brand-error: #D50000;
+    --brand-input-border: #D1C4E9;
+    --brand-input-fg: #1A237E;
+    --brand-input-bg: transparent;
+    --comp-workspace-before-bg: var(--brand-primary);
+    --comp-bg-kiwi-workspace--disconnected-after-bg: var(--brand-error);
+    --comp-header-bg: var(--brand-default-bg);
+    --comp-header-name-fg: var(--brand-default-fg);
+    --comp-header-option-active-fg: var(--brand-default-bg);
+    --comp-header-option-active-bg: var(--brand-primary);
+    --comp-statebrowser-fg: #fff;
+    --comp-statebrowser-bg: var(--brand-darktone);
+    --comp-statebrowser-bg-networkname: #4A148C;
+    --comp-statebrowser-channel-active-bg: #ffffff0d;
+    --comp-statebrowser-channel-active-fg: #fff;
+    --comp-usermenu-open-bg: #311B92;
+    --comp-statebrowser-network-border: #6A1B9A;
+    --comp-sidebar-bg: #fff;
+    --comp-sidebar-fg: #1A237E;
+    --comp-scroller-bg: #EDE7F6;
+    --comp-scroller-fg: #6A1B9A;
+    --comp-aboutbuffer-bg: rgba(0, 0, 0, 0.03);
+    --comp-aboutbuffer-header-bg: #4A148C;
+    --brand-link-normal: var(--brand-primary);
+    --brand-link--hover: var(--brand-primary-hover);
+    --brand-shadow: rgba(0, 0, 0, 0.1);
+    --comp-border: #311B92;
+}
+
+.kiwi-sidebar.kiwi-theme-bg, .kiwi-sidebar-section-nicklist { background-image: url('https://www.transparenttextures.com/patterns/cubes.png'); }  /* Fondo oscuro */
+
+/* Fondo de pantalla con un toque divertido */
+.kiwi-workspace-background {
+    background-image: url('background.jpg');
+    opacity: 0.3;  /* Más transparente para no distraer */
+    background-size: 40% auto;
+}
+.kiwi-wrap,
+.kiwi-workspace {
+    background: initial;
+}
