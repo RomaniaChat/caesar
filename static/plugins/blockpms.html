@@ -1,0 +1,48 @@
+<template id="block-pv">
+    <a @click="buttonClicked">
+      <span v-if="$state.ui.app_width > 769">
+        <i v-if="blockPM" class="fa fa-envelope" style="color:red" aria-hidden="true"></i><i v-else class="fa fa-envelope-open" style="color:green" aria-hidden="true"></i>
+          <span v-if="blockPM">PRIVAT <b>BLOCAT</b></span>
+          <span v-else>PRIVAT <b>PERMIS</b></span>
+      </span>
+        <i v-else-if="blockPM" class="fa fa-envelope" style="color:red" aria-hidden="true"></i><i v-else class="fa fa-envelope-open" style="color:green" aria-hidden="true"></i>
+    </a>
+</template>
+<script>
+    kiwi.plugin('block_pv', function(kiwi, log) {
+        kiwi.on('irc.registered', function(event, network) {
+            if (kiwi.state.setting('buffers.block_pms') == true) {
+                network.ircClient.raw('MODE', network.nick, '+D');
+            //} else {
+            //    network.ircClient.raw('MODE', network.nick, '-D');
+            }
+        });
+        var button = new kiwi.Vue({
+            template: '#block-pv',
+            computed: {
+                blockPM: function blockPM() {
+                    return kiwi.state.setting('buffers.block_pms');
+                }
+            },
+            methods: {
+                buttonClicked: function buttonClicked() {
+                    var msg = 'Mesajele private sunt ' + (this.blockPM ? 'permise' : 'blocate') + '.';
+                    var network = this.$state.getActiveNetwork();
+                    kiwi.state.setting('buffers.block_pms', !this.blockPM);
+                    var currentpmstate = kiwi.state.setting('buffers.block_pms');
+                    kiwi.state.addMessage(kiwi.state.getActiveBuffer(), {
+                        nick: 'Atenție!',
+                        message: msg,
+                        type: 'notice'
+                    });
+                    if (kiwi.state.setting('buffers.block_pms') == true) {
+                        kiwi.state.$emit('input.raw', '/UMODE +D' );
+                    } else {
+                        kiwi.state.$emit('input.raw', '/UMODE -D' );
+                    }
+                }
+            },
+        });
+        kiwi.addUi('header_channel', button.$mount().$el);
+    });
+</script>
