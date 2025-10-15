@@ -1,0 +1,7 @@
+/static/*.js
+  Content-Type: application/javascript
+  X-Content-Type-Options: nosniff
+
+/static/*.css
+  Content-Type: text/css
+  X-Content-Type-Options: nosniff
