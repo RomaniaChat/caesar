@@ -76,12 +76,17 @@
     "embedly": {
         "key": ""
     },
-	
+
+    "plugin-avatars" : {
+    "avatar_style": "avataaars"
+  },
+  
     "plugins": [
 		{ "name": "irccloud-avatars", "url": "static/plugins/plugin-irccloud-avatars.html" },
 		{ "name": "blocare-mesaje", "url": "static/plugins/blockpms.html" },
 		{ "name": "font-size", "url": "static/plugins/fontsize.html" },
 		{ "name": "showchat-ident", "url": "static/plugins/showchat-ident.js" },
+		{ "name": "avatars", "url": "static/plugins/plugin-avatars.js" },
         { "name": "radioclick", "url": "static/plugins/plugin-radioclick.js" }
     ]
 }
