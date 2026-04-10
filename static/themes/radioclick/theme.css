@@ -46,7 +46,3 @@
     opacity: 0.3;  /* Más transparente para no distraer */
     background-size: 40% auto;
 }
-.kiwi-wrap,
-.kiwi-workspace {
-    background: initial;
-}
