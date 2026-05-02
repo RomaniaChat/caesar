@@ -66,7 +66,7 @@
         "direct": false,
 		"termsContent": "Prin utilizarea acestui chat, sunteți de acord cu <a href='https://romaniachat.eu/regulament-chat/' target='_blank'>Regulament Chat</a>.",
 		"infoBackground": "static/plugins/radioclick/romaniachat.webp",
-        "channel": "#Romania,#RadioClick,#Trivia",
+        "channel": "#RadioClick,#RoMaNiA,#Scrabble,#Trivia",
         "nick": "Vizitator??",
 		"greetingText": "RomaniaChat",
 		"buttonText": "Conectează-te",
